@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-	      <!-- Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16686467348"></script>
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1821870685241890');
-fbq('track', 'PageView');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16686467348');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1821870685241890&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+	  
+
+  <!-- Event snippet for 注册0213 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16686467348/BptsCIOMqZ0aEJSS3ZQ-',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
 	
     <meta charset="UTF-8">
@@ -62,12 +75,8 @@ src="https://www.facebook.com/tr?id=1821870685241890&ev=PageView&noscript=1"
         
         // Centralized function to handle site opening
         function opensite() {
-              fbq('track', 'CompleteRegistration');
-		 fbq('track', 'Contact');
-      fbq('track', 'AddToCart');
-      fbq('track', 'Purchase');
-      fbq('track', 'Lead');
-              window.location.href = "itms-appss://apps.apple.com/cn/app/phonesimgo-esim-data-travel/id6742473074?mt=8";
+        gtag_report_conversion();
+            window.location.href = "itms-appss://apps.apple.com/us/app/phonesimgo-esim-data-travel/id6742473074?mt=8";
         }
     </script>
     <style>
