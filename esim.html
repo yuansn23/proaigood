@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+	      <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1821870685241890');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1821870685241890&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global eSIM - Connect Anywhere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#3F3D9D',
+                        accent: '#FF6B6B',
+                        dark: {
+                            bg: '#181818',
+                            text: '#F3F4F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+
+        // Check for dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+        
+        // Centralized function to handle site opening
+        function opensite() {
+              fbq('track', 'CompleteRegistration');
+		 fbq('track', 'Contact');
+      fbq('track', 'AddToCart');
+      fbq('track', 'Purchase');
+      fbq('track', 'Lead');
+              window.location.href = "itms-appss://apps.apple.com/cn/app/phonesimgo-esim-data-travel/id6742473074?mt=8";
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #5D5CDE 0%, #3F3D9D 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(93, 92, 222, 0.1), 0 10px 10px -5px rgba(93, 92, 222, 0.04);
+        }
+        
+        .floating-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(93, 92, 222, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(93, 92, 222, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(93, 92, 222, 0);
+            }
+        }
+        
+        .countdown {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.2);
+        }
+        
+        .testimonial-card {
+            background: rgba(93, 92, 222, 0.05);
+        }
+        
+        .dark .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .floating-help-button {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-dark-bg text-gray-900 dark:text-dark-text">
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 lg:py-28 relative overflow-hidden">
+        <div class="relative container mx-auto px-4 z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Global Connectivity <span class="text-accent">Without Limits</span>
+                    </h1>
+                    <p class="text-xl mb-8 max-w-lg">
+                        Join over <span class="font-bold">300,000 travelers</span> who stay connected in 200+ countries while saving 55% on roaming fees.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button 
+                            onclick="opensite()" 
+                            class="bg-accent hover:bg-opacity-90 text-white font-semibold px-8 py-4 rounded-lg transition duration-300 text-lg flex items-center justify-center gap-2 shadow-lg">
+                            Get Your eSIM Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="countdown text-white rounded-lg px-4 py-3 inline-flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span class="font-medium">Limited Offer: 20% Cashback</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://www.goodmja.online/esim/steptodown.com379824.jpg" alt="People using eSIM while traveling" class="w-full h-auto">
+                        <div class="absolute bottom-4 left-4 bg-accent text-white text-sm font-medium px-4 py-2 rounded-full">
+                            #NoRoamingFees
+                        </div>
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent opacity-20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary opacity-20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-white dark:to-dark-bg"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 lg:py-24 container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Travelers <span class="text-primary">Choose Us</span></h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Our eSIM technology is preferred by 89% of travel influencers worldwide
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="feature-card p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition duration-300 hover:border-primary dark:hover:border-primary">
+                <div class="text-primary text-3xl mb-4">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Global Coverage</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Connect in 200+ countries and regions without changing your physical SIM
+                </p>
+            </div>
+            
+            <div class="feature-card p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition duration-300 hover:border-primary dark:hover:border-primary">
+                <div class="text-primary text-3xl mb-4">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Save 55%</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Cut your communication costs by more than half compared to traditional roaming
+                </p>
+            </div>
+            
+            <div class="feature-card p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition duration-300 hover:border-primary dark:hover:border-primary">
+                <div class="text-primary text-3xl mb-4">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Multi-Device</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Connect multiple devices with one account - smartphones, tablets, and laptops
+                </p>
+            </div>
+            
+            <div class="feature-card p-6 rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition duration-300 hover:border-primary dark:hover:border-primary">
+                <div class="text-primary text-3xl mb-4">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Human customer service available around the clock in multiple languages
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="bg-gray-50 dark:bg-gray-900 py-16 lg:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://www.goodmja.online/esim/steptodown.com134772.jpg" alt="Happy travelers using our eSIM" class="rounded-xl shadow-xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Trusted by <span class="text-primary">Global Travelers</span></h2>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 dark:text-gray-300">4.9/5 from 12,000+ reviews</span>
+                        </div>
+                        
+                        <div class="testimonial-card p-6 rounded-xl mb-4">
+                            <p class="text-gray-700 dark:text-gray-300 italic mb-4">
+                                "I saved over $200 on my European trip using this eSIM. The connection was flawless in all 8 countries I visited!"
+                            </p>
+                            <p class="font-medium">- Alex T., Travel Blogger</p>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex -space-x-2">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">JD</div>
+                                <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white">SR</div>
+                                <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white">KL</div>
+                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-white">+</div>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300">Joined by 300,000+ travelers worldwide</p>
+                        </div>
+                        
+                        <p class="text-lg mb-6">
+                            <span class="font-bold text-primary">89% of travel influencers</span> recommend our eSIM as their top choice for staying connected abroad.
+                        </p>
+                        
+                        <button 
+                            onclick="opensite()" 
+                            class="bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-lg transition duration-300 text-lg flex items-center justify-center gap-2">
+                            Join Our Global Community <i class="fas fa-users"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 lg:py-24 container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Worry-Free <span class="text-primary">Connectivity</span></h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Travel with confidence knowing you're always connected
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow-lg border border-gray-100 dark:border-gray-800">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 dark:bg-opacity-20 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Privacy Protection</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    No contracts or personal data selling. Your privacy is our priority.
+                </p>
+            </div>
+            
+            <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow-lg border border-gray-100 dark:border-gray-800">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 dark:bg-opacity-20 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Money-Back Guarantee</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    If our service doesn't work as promised, we'll refund your purchase.
+                </p>
+            </div>
+            
+            <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow-lg border border-gray-100 dark:border-gray-800">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 dark:bg-opacity-20 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">20% Cashback</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Limited time offer: Get up to 20% back on your first purchase!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-primary py-16 lg:py-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+            <img src="https://www.goodmja.online/esim/steptodown.com505005.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Travel Without Worrying About Connectivity?</h2>
+                <p class="text-xl mb-8">
+                    Join the 300,000 travelers who never have to hunt for Wi-Fi or worry about roaming charges again.
+                </p>
+                <button 
+                    onclick="opensite()" 
+                    class="bg-white hover:bg-gray-100 text-primary font-semibold px-8 py-4 rounded-lg transition duration-300 text-lg flex items-center justify-center gap-2 mx-auto">
+                    <i class="fas fa-globe"></i> Get Your eSIM Now
+                </button>
+                <p class="mt-6 text-sm opacity-80">
+                    Limited time offer • No contract • 100% money-back guarantee
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">Global eSIM</h3>
+                    <p class="text-gray-400 mt-2">Stay connected everywhere you go</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
+                <p>&copy; 2023 Global eSIM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Help Button (Right side, middle) -->
+    <button 
+        onclick="opensite()" 
+        class="floating-help-button bg-primary hover:bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition duration-300 floating-button">
+        <i class="fas fa-headset text-2xl"></i>
+    </button>
+</body>
+</html>
